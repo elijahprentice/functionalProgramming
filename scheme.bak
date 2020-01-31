@@ -1,0 +1,3 @@
+(DEFINE (reverse-general L newList)
+)
+(reverse-general (READ) '())
