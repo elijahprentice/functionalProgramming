@@ -1,4 +1,4 @@
 (DEFINE (reverse-general L newList)
-    (CDR L)
+    (reverse-general (CDR L) (CONS (CAR L) newList))
  )
 (reverse-general (READ) '())
