@@ -10,3 +10,8 @@
 (DEFINE (reverse-general L)
         (reverse-it L '())
  )
+(DEFINE (adder sum)
+        (COND
+         ((NULL? sum) 0)
+         (ELSE (+ (CAR sum) (adder (CDR sum)))
+)))
