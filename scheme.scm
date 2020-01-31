@@ -2,7 +2,7 @@
         (IF (NULL? L)
             newList
             (IF (LIST? (CAR L))
-                (reverse-general (CDR L) (CONS (reverse-general(CAR L) (newList)) newList)))
+                (reverse-general (CDR L) (CONS (reverse-general(CAR L) '()) newList))
              (reverse-general (CDR L) (CONS (CAR L) newList))
              )
          )
