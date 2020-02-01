@@ -29,6 +29,11 @@
 (DEFINE (sum-it-up2 L newList)
         (IF (NULL? L)
             (adder newList)
+            (COND
+             ((NUMBER? (CAR L)) (sum-it-up2 (CDR L) (CONS (CAR L) newList)))
+             ((LIST? (CAR L)) (sum-it-up2 (CDR L) (CONS (sum-it-up2(CAR L) '()) newList))
+             (ELSE (sum-it-up2 (CDR L) newList))
+             )
          )
  )
 (DEFINE (sum-up-numbers-general L)
