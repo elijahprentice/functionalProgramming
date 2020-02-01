@@ -26,6 +26,11 @@
 (DEFINE (sum-up-numbers-simple L)
         (sum-it-up L '()))
 
+(DEFINE (sum-it-up2 L newList)
+        (IF (NULL? L)
+            (adder newList)
+         )
+ )
 (DEFINE (sum-up-numbers-general L)
         (sum-it-up2 L '())
  )
