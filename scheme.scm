@@ -51,7 +51,11 @@
  )
 (DEFINE (find-lowest lis lowestNum)
         (IF (NULL? lis)
-            lowestNum)
+            lowestNum
+            (IF (< (CAR lis) lowestNum)
+                (find-lowest (CDR lis) (CAR lis))
+                (find-lowest (CDR lis) lowestNum)
+                ))
         )
 (DEFINE (min-above-min L1 L2 num1 num2 min1 min2)
         (CONS (remove-non-numbers L2 '()) num2)
