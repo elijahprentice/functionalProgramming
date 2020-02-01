@@ -74,6 +74,7 @@
                 )
             (IF (NULL? (remove-non-numbers L1 '()))
                 (not (NULL? (remove-non-numbers L1 '())))
+                (filter-too-low (remove-non-numbers L1 '()) '() (find-lowest (remove-non-numbers L2 '()) (CAR (remove-non-numbers L2 '()))))
                 )
             )
         )
