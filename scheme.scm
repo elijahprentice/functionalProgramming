@@ -39,3 +39,8 @@
 (DEFINE (sum-up-numbers-general L)
         (sum-it-up2 L '())
  )
+
+(DEFINE (remove-non-numbers lis)
+ )
+(DEFINE (min-above-min L1 L2)
+        )
