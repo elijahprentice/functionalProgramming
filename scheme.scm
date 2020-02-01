@@ -40,7 +40,10 @@
         (sum-it-up2 L '())
  )
 
-(DEFINE (remove-non-numbers lis)
- )
+(DEFINE (remove-non-numbers lis newList)
+        (IF(NULL? lis)
+           newList
+           (IF (NUMBER? (CAR lis))
+               (remove-non-numbers (CDR lis) (CONS (CAR lis) newList)))))
 (DEFINE (min-above-min L1 L2)
         )
