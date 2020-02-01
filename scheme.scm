@@ -10,6 +10,7 @@
 (DEFINE (reverse-general L)
         (reverse-it L '())
  )
+
 (DEFINE (adder sum)
         (COND
          ((NULL? sum) 0)
@@ -24,3 +25,7 @@
          ))
 (DEFINE (sum-up-numbers-simple L)
         (sum-it-up L '()))
+
+(DEFINE (sum-up-numbers-general L)
+        (sum-it-up2 L '())
+ )
