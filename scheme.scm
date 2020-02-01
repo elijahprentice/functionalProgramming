@@ -44,6 +44,10 @@
         (IF(NULL? lis)
            newList
            (IF (NUMBER? (CAR lis))
-               (remove-non-numbers (CDR lis) (CONS (CAR lis) newList)))))
+               (remove-non-numbers (CDR lis) (CONS (CAR lis) newList))
+               (remove-non-numbers (CDR lis) newList)
+            )
+         )
+ )
 (DEFINE (min-above-min L1 L2)
         )
